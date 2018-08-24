@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#222222"
+    >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="4dp"
+        android:id="@+id/playerListItemHolder"
+        >
+
+        <ImageView
+            android:id="@+id/playerHeroAvatar"
+            android:layout_width="100dp"
+            android:layout_height="75dp" />
+
+        <TextView
+            android:id="@+id/playerPlayerNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            tools:text="TEST"
+            android:layout_toRightOf="@id/playerHeroAvatar"
+            android:textColor="#ffffff"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:id="@+id/playerStatsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="TEST"
+            android:layout_toRightOf="@id/playerHeroAvatar"
+            android:layout_alignParentBottom="true"
+            android:textColor="#ffffff"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:id="@+id/playerGoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/playerPlayerNameText"
+            android:layout_toLeftOf="@id/playerLastHitsText"
+            android:layout_toRightOf="@id/playerHeroAvatar"
+            tools:text="TEST"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            />
+
+        <TextView
+            android:id="@+id/playerLastHitsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            tools:text="TEST"
+            android:layout_above="@+id/playerLevelText"
+            android:textColor="#ffffff"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:id="@+id/playerLevelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            tools:text="TEST"
+            android:layout_alignParentBottom="true"
+            android:textColor="#ffffff"
+            android:layout_margin="4dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

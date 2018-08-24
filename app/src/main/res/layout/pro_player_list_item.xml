@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/MainDisplayCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="#5a5f66">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/avatar_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp" />
+
+                <View
+                    android:id="@+id/verticalSeparator"
+                    android:layout_width="3dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/avatar_image"
+                    android:background="#222222"></View>
+
+                <LinearLayout
+                    android:id="@+id/MainIdentifiers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp"
+                    android:layout_toRightOf="@id/verticalSeparator"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/personanameText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight=".7"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#222222"/>
+
+                    <TextView
+                        android:id="@+id/account_idText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+                        android:textColor="#222222"/>
+
+                    <TextView
+                        android:id="@+id/steamidText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+                        android:textColor="#222222"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/profileurlText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:clickable="true"
+                android:linksClickable="true"/>
+
+            <TextView
+                android:id="@+id/verifiednameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#222222"/>
+
+            <TextView
+                android:id="@+id/loccountrycodeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#222222"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_margin="5dp"
+                android:background="#222222">
+
+            </View>
+
+            <TextView
+                android:id="@+id/team_nameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#222222"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/team_tagText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#222222"/>
+
+                <TextView
+                    android:id="@+id/team_idText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#222222"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fantasy_roleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#222222"/>
+
+            <TextView
+                android:id="@+id/cheeseText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#222222"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

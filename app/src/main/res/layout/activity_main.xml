@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/dota_wallpaper"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/playersButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="0.90"
+        android:background="@drawable/button_background"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Pro Players"
+        android:textColor="#FFFFFF"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@+id/matchesButton" />
+
+    <Button
+        android:id="@+id/matchesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="0.90"
+        android:background="@drawable/button_background"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Pro Matches"
+        android:textColor="#FFFFFF"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!--<Button-->
+        <!--android:id="@+id/testButton"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:alpha="0.90"-->
+        <!--android:background="@drawable/buttonshape"-->
+        <!--android:shadowColor="#A8A8A8"-->
+        <!--android:shadowDx="0"-->
+        <!--android:shadowDy="0"-->
+        <!--android:shadowRadius="5"-->
+        <!--android:text="Test"-->
+        <!--android:textColor="#FFFFFF"-->
+
+        <!--app:layout_constraintBottom_toTopOf="@+id/playersButton" />-->
+
+
+</android.support.constraint.ConstraintLayout>
